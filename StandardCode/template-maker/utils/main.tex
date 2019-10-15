@@ -1,0 +1,35 @@
+\documentclass[a4paper]{article}
+\usepackage[lmargin=0.5in,rmargin=0.5in,tmargin=0.5in,bmargin=0.3in,footskip=1.1in,headsep=8pt,a4paper]{geometry}
+
+\input{format.tex} % formatting template
+
+\begin{document}
+
+\begin{landscape}
+
+\title{\Huge \bf Template}
+\author{Y}
+% \date{\today}
+
+\maketitle
+
+
+\begin{multicols*}{2}
+\tableofcontents
+\end{multicols*}
+
+\clearpage
+
+\columnseprule=0pt
+\fontsize{7pt}{9pt}
+\selectfont
+
+
+\setcounter{page}{1}
+\begin{multicols*}{2}
+\input{code.tex}
+\end{multicols*}
+
+\end{landscape}
+
+\end{document}
