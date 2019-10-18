@@ -1,3 +1,4 @@
+//http://codeforces.com/gym/101955/problem/L 
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -44,7 +45,7 @@ bool point_in(circle c,point p){
 	return d2<r2||fabs(r2-d2)<EPS;
 }
 //两圆关系：1-相离，2-外切，3-相交，4-内切，5-内含 
-int check(circle c1,circle c2){
+int c2check(circle c1,circle c2){
 	point p1=c1.o,p2=c2.o;
 	double r1=c1.r,r2=c2.r;
 	double d=dis(p1,p2);
@@ -101,14 +102,12 @@ int main(){
 			double x,y,r;
 			cin>>x>>y>>r;
 			circle c2(point(x,y),r);
-//			de(check(c1,c2));
 			cc.pb(c2);
-			if (check(c1,c2)==3){
+			if (c2check(c1,c2)==3){
 				point p1,p2;
 				c2point(c1,c2,p1,p2);
 				pp.pb(p1);
 				pp.pb(p2);
-//				dd(p1.x),dd(p1.y),dd(p2.x),de(p2.y);
 			}
 		}
 		double ans=0;
