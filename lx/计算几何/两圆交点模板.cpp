@@ -70,7 +70,6 @@ void c2point(circle c1,circle c2,point &rp1,point &rp2){
 		rp2.x=-rp1.x;
 	}
 	else if (a!=0 && b==0){
-		
 		rp1.x=rp2.x=r/a;
 		rp1.y=sqrt(r1*r1-rp1.x*rp1.x);
 		rp2.y=-rp1.y;
