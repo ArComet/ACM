@@ -9,10 +9,16 @@ public class Main {
     PrintWriter writer = new PrintWriter(System.out);
     StringTokenizer tokenizer = null;
     void solve()throws Exception{
-    	BigInteger a = nextBigInteger();
-    	BigInteger b = nextBigInteger();
-    	BigInteger c = a.add(b);
-    	writer.print(c);
+    	List<String> mylist1 = new ArrayList<>();
+		List<String> mylist2 = new LinkedList<>();
+		List<String> mylist3 = new Vector<>();
+		Vector<String> vec = new Vector<>();
+		Queue<String> que = new LinkedList<>();
+		Stack<String> sta = new Stack<>();
+		Set<String> myset = new HashSet<>();
+		Set<String> myset2 = new TreeSet<>();
+		Map<String, Integer> mymap = new HashMap<>();
+		Map<String, Integer> mymap2 = new TreeMap<>();
     }
     void run()throws Exception{
     	try {
