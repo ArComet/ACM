@@ -1,3 +1,4 @@
+const double PI = acos(-1.0);
 const int _M = N, _N = N;
 template <class V>
 struct FT {
@@ -38,3 +39,4 @@ struct FT {
 		return A;
 	}
 };
+FT<ll> fft;
