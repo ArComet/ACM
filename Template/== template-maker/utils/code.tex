@@ -1,22 +1,12 @@
 \section{Basic}
 \subsection{.vimrc}
 \begin{lstlisting}[language=C++]
-// vim ~/.vimrc
 set nu ai ci si mouse=a ts=2 sts=2 sw=2
+nmap<F2> : vs %<.in <CR>
 nmap<F3> : !gedit % <CR>
 nmap<F8> : !time ./%< < %<.in <CR>
-nmap<F5> :call CR()<CR>
-func! CR()
-exec "w"
-exec "!g++ % -o %<"
-exec "! ./%<"
-endfunc
-map<F2> :call SetTitle()<CR>
-func SetTitle()
-let l = 0
-let l = l + 1 | call setline(l,'#include <bits/stdc++.h>')
-let l = l + 1 | call setline(l,'using namespace std;')
-endfunc
+nmap<F9> : :w <CR> :!g++ % -o %< -O2 -g -std=c++11 -Wall <CR>
+nmap<F10> : :w <CR> :make %< <CR>
 \end{lstlisting}
 \subsection{head}
 \begin{lstlisting}[language=C++]
@@ -68,6 +58,34 @@ int main(){
 \end{lstlisting}
 
 \section{DataStructure}
+\subsection{LCARMQ}
+\begin{lstlisting}[language=C++]
+// N is 2 size of tree , id of nodes start from 1
+struct LCARMQ{
+	static const int N = 101010 << 1;
+	int a[20][N] , lft[N] , dep[N] , lg[N] , L;
+	int rmin(int x,int y){return dep[x] < dep[y] ? x : y;}
+	void add(int x){ a[0][L++] = x;}
+	void dfs(int c,int fa,const vi g[]){
+		lft[c]=L;add(c);
+		for(auto t : g[c]) if(t!=fa) dep[t]=dep[c]+1,dfs(t,c,g),add(c);
+	}
+	void Build(const vi g[]){
+		L = 0;dfs(1,0,g);dep[0] = -1;
+		rep(i,2,L) lg[i]=lg[i>>1]+1;
+		rep(i,1,20){
+			int lim = L+1-(1<<i);
+			rep(j,0,lim) a[i][j] = rmin(a[i-1][j] , a[i-1][j+(1<<i>>1)]);
+		}
+	}
+	int lca(int x,int y){
+		x = lft[x] , y = lft[y];
+		if(x > y) swap(x , y);
+		int i = lg[y-x+1];
+		return rmin(a[i][x] , a[i][y+1-(1<<i)]);
+	}
+};
+\end{lstlisting}
 \subsection{ST}
 \begin{lstlisting}[language=C++]
 // [0,n)
@@ -1486,11 +1504,11 @@ struct NTT{
 \subsection{æ¬§æ‹‰å‡½æ•°}
 \begin{lstlisting}[language=C++]
 /*
-Å·À­¹«Ê½Euler(n)=n/(1-1/p1)(1-1/p2)(¡­)
-Çó[1,n-1]ÖÐÓën»¥ÖÊµÄÊýµÄ¸öÊý 
+æ¬§æ‹‰å…¬å¼Euler(n)=n/(1-1/p1)(1-1/p2)(â€¦)
+æ±‚[1,n-1]ä¸­ä¸Žnäº’è´¨çš„æ•°çš„ä¸ªæ•° 
 */ 
 
-//Çóµ¥¸öÅ·À­º¯ÊýÖµ 
+//æ±‚å•ä¸ªæ¬§æ‹‰å‡½æ•°å€¼ 
 int euler(int n){
 	int ans = 1,i;
 	for (i = 2; i * i <= n; i++){
@@ -1506,7 +1524,7 @@ int euler(int n){
 	if (n > 1) ans *= n - 1;
 	return ans;
 }
-//É¸ËØÊý·¨Çó1..nÅ·À­º¯ÊýÖµ
+//ç­›ç´ æ•°æ³•æ±‚1..næ¬§æ‹‰å‡½æ•°å€¼
 \end{lstlisting}
 \subsection{çº¿æ€§ç­›ç´ æ•°}
 \begin{lstlisting}[language=C++]

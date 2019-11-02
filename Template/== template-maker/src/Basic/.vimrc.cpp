@@ -1,16 +1,6 @@
-// vim ~/.vimrc
 set nu ai ci si mouse=a ts=2 sts=2 sw=2
+nmap<F2> : vs %<.in <CR>
 nmap<F3> : !gedit % <CR>
 nmap<F8> : !time ./%< < %<.in <CR>
-nmap<F5> :call CR()<CR>
-func! CR()
-exec "w"
-exec "!g++ % -o %<"
-exec "! ./%<"
-endfunc
-map<F2> :call SetTitle()<CR>
-func SetTitle()
-let l = 0
-let l = l + 1 | call setline(l,'#include <bits/stdc++.h>')
-let l = l + 1 | call setline(l,'using namespace std;')
-endfunc
+nmap<F9> : :w <CR> :!g++ % -o %< -O2 -g -std=c++11 -Wall <CR>
+nmap<F10> : :w <CR> :make %< <CR>

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.11.2)  2 NOV 2019 23:10
+This is XeTeX, Version 3.1415926-2.3-0.9997.5 (MiKTeX 2.9) (preloaded format=xelatex 2019.11.2)  2 NOV 2019 23:15
 entering extended mode
 **main.tex
 ("C:\Users\linxin\test\Git\ACM\Template\== template-maker\utils\main.tex"
@@ -1007,12 +1007,13 @@ tures={RawFeature={embolden=4,slant=0.17}}].
 
 ] ("C:\Users\linxin\test\Git\ACM\Template\== template-maker\utils\code.tex"
 
-LaTeX Font Warning: Font shape `EU1/LiberationMono(0)/m/it' undefined
-(Font)              using `EU1/LiberationMono(0)/m/n' instead on input line 4.
-
-
 LaTeX Font Warning: Font shape `EU1/LiberationMono(0)/bx/n' undefined
-(Font)              using `EU1/LiberationMono(0)/m/n' instead on input line 23.
+(Font)              using `EU1/LiberationMono(0)/m/n' instead on input line 13.
+
+
+
+LaTeX Font Warning: Font shape `EU1/LiberationMono(0)/m/it' undefined
+(Font)              using `EU1/LiberationMono(0)/m/n' instead on input line 50.
 
 
 .................................................
@@ -1037,75 +1038,7 @@ tures={RawFeature={embolden=4,slant=0.17}}].
 .................................................
 [1
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
-Missing character: There is no ʽ in font Liberation Mono/ICU!
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1490 replaced by U+FFFD.
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no ʵ in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Invalid UTF-8 byte or sequence at line 1493 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1493 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1493 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1493 replaced by U+FFFD.
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no character number "F5978 in font Liberation Mono/
-ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no ֵ in font Liberation Mono/ICU!
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Invalid UTF-8 byte or sequence at line 1509 replaced by U+FFFD.
-Missing character: There is no ɸ in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimSun(0)' created for font 'SimSun' with options
-. [BoldFont={SimSun},BoldFeatures={RawFeature={embolden=4}},ItalicFont={SimSun}
-,ItalicFeatures={RawFeature={slant=0.17}},BoldItalicFont={SimSun},BoldItalicFea
-tures={RawFeature={embolden=4,slant=0.17}}].
-. 
-. This font family consists of the following shapes:
-.................................................
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no � in font Liberation Mono/ICU!
-Missing character: There is no ֵ in font Liberation Mono/ICU!
- [14]) [15]
+] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]) [15]
 
 AED: lastpage setting LastPage
 ("C:\Users\linxin\test\Git\ACM\Template\== template-maker\utils\main.aux")
@@ -1114,12 +1047,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 18548 strings out of 430478
- 358586 string characters out of 3191002
- 1034879 words of memory out of 3000000
- 21417 multiletter control sequences out of 15000+200000
- 10240 words of font info for 72 fonts, out of 3000000 for 9000
+ 18562 strings out of 430478
+ 358655 string characters out of 3191002
+ 1017879 words of memory out of 3000000
+ 21434 multiletter control sequences out of 15000+200000
+ 10232 words of font info for 71 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 49i,13n,97p,649b,2005s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,13n,97p,649b,1999s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on main.pdf (16 pages).
